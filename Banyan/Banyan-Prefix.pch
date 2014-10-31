@@ -1,0 +1,63 @@
+//
+// Prefix header for all source files of the 'Banyan' target in the 'Banyan' project
+//
+
+#import <Availability.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import "BanyanConstants.h"
+#import "BNMisc.h"
+
+#ifndef __IPHONE_6_0
+#warning "This project uses features only available in iOS SDK 6.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import <CoreData/CoreData.h>
+    #import <RestKit/RestKit.h>
+    #import <RestKit/CoreData.h>
+    #import <Crashlytics/Crashlytics.h>
+    #import <FacebookSDK/FacebookSDK.h>
+    #import "UIViewController+GoogleAnalytics.h"
+#endif
+
+#ifdef __APPLE__
+#include "TargetConditionals.h"
+#endif
+
+#define BNLogInfo CLS_LOG
+#define BNLogWarning CLS_LOG
+#define BNLogError CLS_LOG
+#ifdef DEBUG
+#define BNLogTrace CLS_LOG
+#else
+#define BNLogTrace(...)
+#endif
+
+#define REPLACE_NIL_WITH_NULL(__value__) (__value__ ? __value__ : [NSNull null])
+#define REPLACE_NULL_WITH_NIL(__value__) ([__value__ isEqual:[NSNull null]] ? nil : __value__)
+#define REPLACE_NULL_WITH_ZERO(__value__) ([__value__ isEqual:[NSNull null]] ? [NSNumber numberWithInt:0] : __value__)
+#define REPLACE_NULL_WITH_EMPTY_ARRAY(__value__) ([__value__ isEqual:[NSNull null]] ? [NSArray array] : __value__)
+#define REPLACE_NIL_WITH_EMPTY_STRING(__value__) (__value__ ? __value__ : @"")
+#define REPLACE_EMPTY_STRING_WITH_NIL(__value__) (__value__.length ? __value__ : nil)
+#define NUMBER_EXISTS(__value__) !([__value__ isEqual:[NSNull null]] || [__value__ intValue] == 0)
+
+#define RUN_ASYNC_ON_MAINTHREAD(__block__) if ([NSThread isMainThread]) __block__(); else dispatch_async(dispatch_get_main_queue(), __block__);
+#define RUN_SYNC_ON_MAINTHREAD(__block__) if ([NSThread isMainThread]) __block__(); else dispatch_sync(dispatch_get_main_queue(), __block__);
+
+#define SET_CMPOPTIPVIEW_APPEARANCES(__popTipView__) \
+do {    \
+__popTipView__.backgroundColor = [BANYAN_DARKGRAY_COLOR colorWithAlphaComponent:0.95];\
+__popTipView__.titleFont = [UIFont fontWithName:@"Roboto-Bold" size:14];\
+__popTipView__.textFont = [UIFont fontWithName:@"Roboto" size:12];\
+__popTipView__.has3DStyle = NO;\
+__popTipView__.borderColor = __popTipView__.backgroundColor;\
+__popTipView__.borderWidth = 0;\
+__popTipView__.hasShadow = NO;\
+__popTipView__.pointerSize = 6;\
+__popTipView__.hasGradientBackground = NO;\
+[__popTipView__ autoDismissAnimated:YES atTimeInterval:5];\
+__popTipView__.disableTapToDismiss = NO;\
+} while(FALSE)
