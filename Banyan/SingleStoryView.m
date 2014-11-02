@@ -336,7 +336,7 @@ static NSString *_exclaimString;
         point.y = TOP_VIEW_HEIGHT/2+SPACER_DISTANCE;
         [[UIColor grayColor] set];
         NSUInteger unseenPieces = self.story.numNewPiecesToView;
-        string = [NSString stringWithFormat:@"#%d pcs %@", self.story.pieces.count, unseenPieces == 0 ? @"" : [NSString stringWithFormat:@"(%d unread)", unseenPieces]];
+        string = [NSString stringWithFormat:@"#%lu pcs %@", self.story.pieces.count, unseenPieces == 0 ? @"" : [NSString stringWithFormat:@"(%lu unread)", (unsigned long)unseenPieces]];
         
         size = CGSizeMake(CGRectGetWidth(self.frame)/2 - TABLE_CELL_MARGIN - BUTTON_SPACING, TOP_VIEW_HEIGHT/2);
         

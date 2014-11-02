@@ -149,7 +149,7 @@
         return [self.story.pieces objectAtIndex:pieceIndexNum];
     }
     @catch (NSException *exception) {
-        BNLogError(@"Error in getting currentlyVisible Piece for index: %d", pieceIndexNum);
+        BNLogError(@"Error in getting currentlyVisible Piece for index: %lu", (unsigned long)pieceIndexNum);
         [BNMisc sendGoogleAnalyticsException:exception inAction:@"Getting currentPieceIndex" isFatal:NO];
         return nil;
     }

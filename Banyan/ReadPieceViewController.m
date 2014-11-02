@@ -596,7 +596,7 @@ static NSString *_heartFullString;
                                                      NSForegroundColorAttributeName: BANYAN_DARKGRAY_COLOR}];
     }
     
-    NSAttributedString *pageString = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"\rpiece %d/%d", currentPieceNum+1, self.piece.story.length]
+    NSAttributedString *pageString = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"\rpiece %lu/%d", currentPieceNum+1, self.piece.story.length]
                                                                      attributes:@{NSFontAttributeName: [UIFont fontWithName:@"Roboto" size:10],
                                                                                   NSForegroundColorAttributeName: BANYAN_GRAY_COLOR}];
     NSMutableAttributedString *pageAttrString = [[NSMutableAttributedString alloc] initWithAttributedString:titleString];

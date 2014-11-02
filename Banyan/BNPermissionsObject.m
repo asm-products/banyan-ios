@@ -176,11 +176,11 @@
     if ([self.inviteeList.isPublic boolValue]) {
         return [NSNumber numberWithInt:0];
     } else if (self.inviteeList.allFacebookFriendsOf.count) {
-        return [NSNumber numberWithInt:self.inviteeList.allFacebookFriendsOf.count];
+        return [NSNumber numberWithUnsignedInteger:self.inviteeList.allFacebookFriendsOf.count];
     } else if (self.inviteeList.facebookFriends.count) {
-        return [NSNumber numberWithInt:self.inviteeList.facebookFriends.count];
+        return [NSNumber numberWithUnsignedInteger:self.inviteeList.facebookFriends.count];
     } else {
-        return [NSNumber numberWithInt:0];
+        return [NSNumber numberWithUnsignedInteger:0];
     }
 }
 
@@ -257,7 +257,7 @@
             } else if ((lenghtOfFBInviteeList > 2) && (idx == 0)) {
                 [localPermissionStrAllFbOf appendString:@", "];
             } else if ((lenghtOfFBInviteeList > 2) && (idx == 1)) {
-                [localPermissionStrAllFbOf appendString:[NSString stringWithFormat:@" and %d more", lenghtOfFBInviteeList-idx-1]];
+                [localPermissionStrAllFbOf appendString:[NSString stringWithFormat:@" and %lu more", lenghtOfFBInviteeList-idx-1]];
                 *stop = YES;
             } else {
                 // The length was one, so nothing to do
@@ -282,7 +282,7 @@
             } else if ((lenghtOfFBInviteeList > 2) && (idx == 0)) {
                 [localPermissionStrSelectedFb appendString:@", "];
             } else if ((lenghtOfFBInviteeList > 2) && (idx == 1)) {
-                [localPermissionStrSelectedFb appendString:[NSString stringWithFormat:@" and %d more", lenghtOfFBInviteeList-idx-1]];
+                [localPermissionStrSelectedFb appendString:[NSString stringWithFormat:@" and %lu more", lenghtOfFBInviteeList-idx-1]];
                 *stop = YES;
             } else {
                 // The length was one, so nothing to do

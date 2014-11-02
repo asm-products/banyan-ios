@@ -268,7 +268,7 @@ static NSString *const unfollowStoryString = @"Unfollow story";
     [BNMisc sendGoogleAnalyticsEventWithCategory:@"User Interaction"
                                           action:@"story overview"
                                            label:@"selected a piece"
-                                           value:[NSNumber numberWithInt:indexPath.item]];
+                                           value:[NSNumber numberWithInteger:indexPath.item]];
 }
 
 @end

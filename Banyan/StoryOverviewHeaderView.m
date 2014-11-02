@@ -92,7 +92,7 @@
 {
     self.arrayOfContributors = [self.story sortedArrayOfPieceContributorsWithCount];
     
-    NSAttributedString *contrString = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%d contributors have contributed to the story\r", self.arrayOfContributors.count]
+    NSAttributedString *contrString = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%lu contributors have contributed to the story\r", (unsigned long)self.arrayOfContributors.count]
                                                                       attributes:@{NSFontAttributeName: [UIFont fontWithName:@"Roboto-Bold" size:14]}];
     NSAttributedString *tapStr = [[NSAttributedString alloc] initWithString:@"Tap for more details about contributors"
                                                                  attributes:@{NSFontAttributeName: [UIFont fontWithName:@"Roboto" size:10],

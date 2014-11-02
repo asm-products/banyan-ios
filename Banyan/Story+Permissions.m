@@ -62,7 +62,7 @@ NSString *const kDictionaryInSortedArrayOfContributorsCountKey = @"count";
             if ((lengthOfContributors == 2) && (idx == 0)) {
                 [contributorStr appendString:@" and "];
             } else if ((lengthOfContributors > 2) && (idx == 0)) {
-                [contributorStr appendString:[NSString stringWithFormat:@" and %d more", lengthOfContributors-idx-1]];
+                [contributorStr appendString:[NSString stringWithFormat:@" and %lu more", lengthOfContributors-idx-1]];
                 *stop = YES;
             } else {
                 // The length was one, so nothing to do

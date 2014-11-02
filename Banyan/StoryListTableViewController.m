@@ -462,7 +462,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             && [[BanyanConnection storiesPaginator] isLoaded]
             && [[BanyanConnection storiesPaginator] hasNextPage]) {
             [[BanyanConnection storiesPaginator] loadNextPage];
-            BNLogInfo(@"StoryListTableViewController loadDataSource BEGIN for page %d", [BanyanConnection storiesPaginator].currentPage);
+            BNLogInfo(@"StoryListTableViewController loadDataSource BEGIN for page %lu", (unsigned long)[BanyanConnection storiesPaginator].currentPage);
             [self.activityView startAnimating];
             self.tableView.tableFooterView = self.activityView;
         }

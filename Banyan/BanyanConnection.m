@@ -221,7 +221,7 @@
         _storiesPaginator.perPage = 10; // this will request /posts?page=N&per_page=10
         
         [_storiesPaginator setCompletionBlockWithSuccess:^(RKPaginator *paginator, NSArray *objects, NSUInteger page) {
-            BNLogInfo(@"BanyanConnection loadDataSource COMPLETE for page %d", page);
+            BNLogInfo(@"BanyanConnection loadDataSource COMPLETE for page %lu", (unsigned long)page);
             NSArray *stories = objects;
             [stories enumerateObjectsUsingBlock:^(Story *story, NSUInteger idx, BOOL *stop) {
                 story.lastSynced = [NSDate date];

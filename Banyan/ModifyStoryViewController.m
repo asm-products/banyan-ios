@@ -418,7 +418,7 @@
 
 - (void) updateCharCountWithLength:(NSUInteger)len
 {
-    self.charCountLabel.text = [NSString stringWithFormat:@"%d charachers left", MAX_STORY_TITLE_LENGTH-len];
+    self.charCountLabel.text = [NSString stringWithFormat:@"%lu charachers left", MAX_STORY_TITLE_LENGTH-len];
 }
 
 # pragma mark InvitedTableViewControllerDelegate

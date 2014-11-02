@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B8D601560334B81AE48FCCD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EDBDCCC91248339FDC7301 /* libPods.a */; };
 		5103FB9F166898960095B11F /* UIImage+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5103FB9E166898960095B11F /* UIImage+Create.m */; };
 		5105364F17A5AD720046D969 /* defaultPerfs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5105364E17A5AD720046D969 /* defaultPerfs.plist */; };
 		510787C6163A36A90042B436 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 510787C1163A36A90042B436 /* UIImage+AlphaAdditions.m */; };
@@ -18,6 +17,7 @@
 		510F49171727D191005BC5ED /* NSObject+BlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 510F49161727D191005BC5ED /* NSObject+BlockObservation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		510F4920172A5B86005BC5ED /* Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = 510F491F172A5B86005BC5ED /* Piece.m */; };
 		510F4923172A5C17005BC5ED /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 510F4922172A5C17005BC5ED /* Story.m */; };
+		511296401A05FA7400A22C83 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5112963F1A05FA7400A22C83 /* libPods.a */; };
 		5112D057181A4CE5003E8C37 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5112D056181A4CE5003E8C37 /* CoreVideo.framework */; };
 		5112D105181C61F0003E8C37 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5112D104181C61F0003E8C37 /* UIPlaceHolderTextView.m */; };
 		5112D106181E4EEA003E8C37 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517A01BD17095F2100665F0F /* Accelerate.framework */; };
@@ -266,6 +266,7 @@
 		510F491F172A5B86005BC5ED /* Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Piece.m; path = Banyan/Piece.m; sourceTree = "<group>"; };
 		510F4921172A5C17005BC5ED /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Story.h; path = Banyan/Story.h; sourceTree = "<group>"; };
 		510F4922172A5C17005BC5ED /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Story.m; path = Banyan/Story.m; sourceTree = "<group>"; };
+		5112963F1A05FA7400A22C83 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		5112D056181A4CE5003E8C37 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		5112D103181C61F0003E8C37 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIPlaceHolderTextView.h; path = Banyan/UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		5112D104181C61F0003E8C37 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIPlaceHolderTextView.m; path = Banyan/UIPlaceHolderTextView.m; sourceTree = "<group>"; };
@@ -594,8 +595,8 @@
 		51FAC0B7172C829E0046C2D6 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = Banyan/Comment.m; sourceTree = "<group>"; };
 		51FAC0BA172F8C500046C2D6 /* FBGraphObjectToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBGraphObjectToDataTransformer.h; path = Banyan/FBGraphObjectToDataTransformer.h; sourceTree = "<group>"; };
 		51FAC0BB172F8C500046C2D6 /* FBGraphObjectToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBGraphObjectToDataTransformer.m; path = Banyan/FBGraphObjectToDataTransformer.m; sourceTree = "<group>"; };
-		8ED9F22B0C2B4CE9B82B3621 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		F6EDBDCCC91248339FDC7301 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B185FB382897CD95D4B5A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		94F8BE95476BB4473FAF852C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -603,6 +604,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				511296401A05FA7400A22C83 /* libPods.a in Frameworks */,
 				5189B2B815B387E200562DD0 /* UIKit.framework in Frameworks */,
 				515CF517183DF1650071C9B2 /* StoreKit.framework in Frameworks */,
 				5189B45715B3A38E00562DD0 /* QuartzCore.framework in Frameworks */,
@@ -641,7 +643,6 @@
 				5189B3BB15B39BA400562DD0 /* libz.dylib in Frameworks */,
 				5148F85F18DC1310005CFA86 /* AWSS3.framework in Frameworks */,
 				5189B3B715B39B9300562DD0 /* CoreLocation.framework in Frameworks */,
-				0B8D601560334B81AE48FCCD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,7 +1026,7 @@
 				5189B2BD15B387E200562DD0 /* Banyan */,
 				5189B2B615B387E200562DD0 /* Frameworks */,
 				5189B2B415B387E200562DD0 /* Products */,
-				8ED9F22B0C2B4CE9B82B3621 /* Pods.xcconfig */,
+				8A92B73BF6A7476E5B7B4535 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1040,6 +1041,7 @@
 		5189B2B615B387E200562DD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5112963F1A05FA7400A22C83 /* libPods.a */,
 				519DE58919CC10B200A03D91 /* libsqlite3.0.dylib */,
 				519DE58719CC109900A03D91 /* CoreData.framework */,
 				51DBA89219876EFB005E6048 /* libz.1.2.5.dylib */,
@@ -1080,7 +1082,6 @@
 				5189B2B715B387E200562DD0 /* UIKit.framework */,
 				5189B2B915B387E200562DD0 /* Foundation.framework */,
 				5189B2BB15B387E200562DD0 /* CoreGraphics.framework */,
-				F6EDBDCCC91248339FDC7301 /* libPods.a */,
 				51596AB61745E284008F5276 /* CoreMedia.framework */,
 			);
 			name = Frameworks;
@@ -1719,6 +1720,15 @@
 			name = "Value Transformers";
 			sourceTree = "<group>";
 		};
+		8A92B73BF6A7476E5B7B4535 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94F8BE95476BB4473FAF852C /* Pods.debug.xcconfig */,
+				93B185FB382897CD95D4B5A6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1889,7 +1899,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 		};
 		513203C218B3DE90007A53FD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2066,15 +2076,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "219DAC61-4692-4815-BB48-D8BCADE24A14";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "219DAC61-4692-4815-BB48-D8BCADE24A14";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "arm64 arm7 arm7s";
 			};
 			name = Debug;
 		};
@@ -2105,23 +2110,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
 				PROVISIONING_PROFILE = "76CF839F-56F2-4AD6-AB7C-B722B1D8FEB3";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "76CF839F-56F2-4AD6-AB7C-B722B1D8FEB3";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 arm7 arm7s";
 			};
 			name = Release;
 		};
 		5189B2CC15B387E200562DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ED9F22B0C2B4CE9B82B3621 /* Pods.xcconfig */;
+			baseConfigurationReference = 94F8BE95476BB4473FAF852C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2139,44 +2139,16 @@
 				GCC_PREFIX_HEADER = "Banyan/Banyan-Prefix.pch";
 				INFOPLIST_FILE = "Banyan/Banyan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/devangmundhra/Developer/Banyan/Banyan/lib,
-					/Users/devangmundhra/Developer/Banyan/Banyan/AviarySDK,
-					/Users/devangmundhra/Developer/Banyan,
-					"/Users/devangmundhra/Developer/Banyan/Pods/GoogleAnalytics-iOS-SDK",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lz",
-					"-framework",
-					CFNetwork,
-					"-framework",
-					CoreData,
-					"-framework",
-					CoreGraphics,
-					"-framework",
-					MobileCoreServices,
-					"-framework",
-					QuartzCore,
-					"-framework",
-					Security,
-					"-framework",
-					SystemConfiguration,
-					"-framework",
-					UIKit,
-					"-all_load",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = "armv7 armv7s";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		5189B2CD15B387E200562DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ED9F22B0C2B4CE9B82B3621 /* Pods.xcconfig */;
+			baseConfigurationReference = 93B185FB382897CD95D4B5A6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2194,37 +2166,9 @@
 				GCC_PREFIX_HEADER = "Banyan/Banyan-Prefix.pch";
 				INFOPLIST_FILE = "Banyan/Banyan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/devangmundhra/Developer/Banyan/Banyan/lib,
-					/Users/devangmundhra/Developer/Banyan/Banyan/AviarySDK,
-					/Users/devangmundhra/Developer/Banyan,
-					"/Users/devangmundhra/Developer/Banyan/Pods/GoogleAnalytics-iOS-SDK",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lz",
-					"-framework",
-					CFNetwork,
-					"-framework",
-					CoreData,
-					"-framework",
-					CoreGraphics,
-					"-framework",
-					MobileCoreServices,
-					"-framework",
-					QuartzCore,
-					"-framework",
-					Security,
-					"-framework",
-					SystemConfiguration,
-					"-framework",
-					UIKit,
-					"-all_load",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = "armv7 armv7s";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

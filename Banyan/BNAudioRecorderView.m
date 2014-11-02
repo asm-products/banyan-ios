@@ -61,7 +61,7 @@
 - (void) setDelegate:(id<BNAudioRecorderViewDelegate>)delegate
 {
     _delegate = delegate;
-    [self setTextForTimeLabel:[NSString stringWithFormat:@"0/%ds", [delegate bnAudioRecorderAudioRecordDuration]]];
+    [self setTextForTimeLabel:[NSString stringWithFormat:@"0/%lus", (unsigned long)[delegate bnAudioRecorderAudioRecordDuration]]];
 }
 
 - (void) setup
@@ -78,7 +78,7 @@
     [self addSubview:_deleteButton];
     
     _timeLabel = [[UILabel alloc] init];
-    _timeLabel.text = [NSString stringWithFormat:@"0/%ds", self.delegate.bnAudioRecorderAudioRecordDuration];
+    _timeLabel.text = [NSString stringWithFormat:@"0/%lus", (unsigned long)self.delegate.bnAudioRecorderAudioRecordDuration];
     _timeLabel.font = [UIFont fontWithName:@"Roboto-Condensed" size:14];
     _timeLabel.textColor = BANYAN_WHITE_COLOR;
     _timeLabel.backgroundColor = BANYAN_CLEAR_COLOR;
@@ -178,7 +178,7 @@
     [self.controlButton setImage:[UIImage imageNamed:@"Microphone"] forState:UIControlStateNormal];
     [self.controlButton removeTarget:self action:NULL forControlEvents:UIControlEventTouchUpInside];
     [self.controlButton addTarget:self action:@selector(recordAudio:) forControlEvents:UIControlEventTouchUpInside];
-    self.timeLabel.text = [NSString stringWithFormat:@"0/%ds", [self.delegate bnAudioRecorderAudioRecordDuration]];
+    self.timeLabel.text = [NSString stringWithFormat:@"0/%lus", (unsigned long)[self.delegate bnAudioRecorderAudioRecordDuration]];
 }
 
 - (void)setPlayControlButtons
