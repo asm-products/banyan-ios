@@ -169,6 +169,8 @@
 - (void) flaggedWithMessage:(NSString *)message
 {
     BNLogInfo(@"Flagging object %@ with message: %@", self.bnObjectId, message);
+    if (!self.resourceUri)
+        return;
     [[AFBanyanAPIClient sharedClient] postPath:@"flag_object/"
                                     parameters:@{@"content_object":self.resourceUri, @"message":message}
                                        success:^(AFHTTPRequestOperation *operation, id responseObject) {
