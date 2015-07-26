@@ -109,7 +109,7 @@
                                                                                        NSBaselineOffsetAttributeName : [NSNumber numberWithInt:0]}];
     [aboutStringFinal appendAttributedString:sharingTitle];
     
-    NSAttributedString *sharingBody = [[NSAttributedString alloc] initWithString:@"Share your story as a photo album on Facebook, or for a richer experience, as a story on banyan.io site.\r\r"
+    NSAttributedString *sharingBody = [[NSAttributedString alloc] initWithString:@"Share your story as a photo album on Facebook, or for a richer experience, as a story on banyan site.\r\r"
                                                                          attributes:@{NSFontAttributeName: [UIFont fontWithName:@"Roboto" size:bodyFontSize],
                                                                                       NSForegroundColorAttributeName: BANYAN_DARKGRAY_COLOR,
                                                                                       NSParagraphStyleAttributeName: paragraphStyle,
@@ -117,7 +117,7 @@
     [aboutStringFinal appendAttributedString:sharingBody];
     
     NSAttributedString *feedbackBody = [[NSAttributedString alloc] initWithString:@"We are always eager to hear from you, and to help you make it easier to record and relive your memories with your friends.\r"
-                                        "Send us your thoughts and questions at help@banyan.io \r\r"
+                                        "Send us your thoughts and questions at banyan.ios.app@gmail.com \r\r"
                                                                       attributes:@{NSFontAttributeName: [UIFont fontWithName:@"Roboto" size:bodyFontSize],
                                                                                    NSForegroundColorAttributeName: BANYAN_BLACK_COLOR,
                                                                                    NSParagraphStyleAttributeName: paragraphStyle,

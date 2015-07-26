@@ -56,7 +56,7 @@ NSString *const fbLoginNoUserEmailAlert = @"User email not found";
     self.eulaLabel.enabledTextCheckingTypes = NSTextCheckingTypeLink;
     self.eulaLabel.text = @"By logging in, you agree to the terms that govern the use of the Banyan application.";
     NSRange range = [self.eulaLabel.text rangeOfString:@"terms"];
-    [self.eulaLabel addLinkToURL:[NSURL URLWithString:@"https://www.banyan.io/terms"] withRange:range];
+    [self.eulaLabel addLinkToURL:[NSURL URLWithString:@"http://banyan.herokuapp.com/terms"] withRange:range];
     self.eulaLabel.delegate = self;
 
     self.fbLoginView.delegate = self;

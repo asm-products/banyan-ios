@@ -271,7 +271,7 @@
     self.fifthPageLabel.textAlignment = NSTextAlignmentCenter;
     self.fifthPageLabel.font = [UIFont fontWithName:@"Roboto-Bold" size:TEXT_FONT_SIZE];
     self.fifthPageLabel.textColor = BANYAN_WHITE_COLOR;
-    self.fifthPageLabel.text = @"Keep the story to yourself, share it with a special few or let the world know about it.\rStories can be shared as photo albums on facebook or viewed on banyan.io";
+    self.fifthPageLabel.text = @"Keep the story to yourself, share it with a special few or let the world know about it.\rStories can be shared as photo albums on facebook or viewed on banyan.herokuapp.com";
 
     self.fifthPageLabel.numberOfLines = 0;
     [self.fifthPageLabel sizeToFit];
